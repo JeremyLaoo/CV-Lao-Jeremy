@@ -31,7 +31,7 @@ function ProfilScreen({navigation}) {
                ainsi que du 
               <Text style={{fontWeight:'bold', fontSize:18}}> travail d’équipe </Text>
               pour le bon développement du magasin. 
-              Des compétences que je saurais mettre à profit dans mon nouvel environnement qui est le développement web."
+              Des compétences que je saurai mettre à profit dans mon nouvel environnement qui est le développement web."
             </Text>
             <Text style={{textAlign:'right'}}> Jérémy Lao.</Text>
           </View> 

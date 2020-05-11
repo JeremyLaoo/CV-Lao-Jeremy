@@ -10,7 +10,7 @@ function WelcomeScreen({navigation}) {
         {/* <CustomHeader title="Login" navigation={navigation}/> */}
         <View style={{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: '#00818a'}}>
         <View style={{height: 150, alignItems:'center', justifyContent:'center', }}>
-          <Image source={require('../src/images/profil.jpg')}
+          <Image source={require('../src/images/profil-color.png')}
             style={styles.image}/>
           </View>
           <Text style={styles.textTitle}>Bienvenue sur l'application CV</Text>

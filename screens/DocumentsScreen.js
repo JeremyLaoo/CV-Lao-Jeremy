@@ -45,7 +45,10 @@ function DocumentScreen({navigation}) {
         tabBarOptions={{
           activeTintColor: '#ec9b3b',
           inactiveTintColor: 'white',
-          
+          indicatorStyle: {
+            backgroundColor: '#ec9b3b',
+            height:1
+          },
           style:{
             backgroundColor: '#00818a',
             height: 70,

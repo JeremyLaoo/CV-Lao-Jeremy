@@ -4,7 +4,8 @@ import { SliderBox } from "react-native-image-slider-box"
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 import CustomHeader from './CustomHeader'
-import Icon from 'react-native-vector-icons/FontAwesome';
+
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import ReactNativeScreen from './ReactNativeScreen'
 import ReactScreen from './ReactScreen'
@@ -26,9 +27,9 @@ function ProjetsScreen({navigation}) {
             let iconName;
 
             if (route.name === 'React Native') {
-              iconName = 'ios-school';
+              iconName = 'ios-information-circle';
             } else if (route.name === 'React') {
-              iconName = 'logo-github';
+              iconName = 'ios-list-box';
             } else if (route.name === 'JavaScript') {
               iconName = 'ios-school';
             } 
@@ -41,13 +42,19 @@ function ProjetsScreen({navigation}) {
         tabBarOptions={{
           activeTintColor: '#ec9b3b',
           inactiveTintColor: 'white',
-          
+          indicatorStyle: {
+            backgroundColor: '#ec9b3b',
+            height:1
+          },
           style:{
             backgroundColor: '#00818a',
             height: 70,
             padding:10,
             marginTop:1,
           },
+          iconStyle:{
+            size:30,
+          }
         }}
         >
           <Tab.Screen name="React Native" component={ReactNativeScreen} />

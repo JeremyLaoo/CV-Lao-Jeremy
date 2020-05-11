@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {Image, ImageBackground, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Button, Overlay } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -600,138 +600,207 @@ function ExperiencesScreen({navigation}) {
 
 
         <ScrollView>
-            <View style={{flexDirection:'row'}}>
-              <View style={styles.viewPoste}>
-                <Text style={{fontSize:11}}>Sept 2019</Text>
-                <Text style={{fontSize:11}}>-</Text>
-                <Text style={{fontSize:11}}>Sept 2018</Text>
-              </View>
-              <View style={styles.cardPoste}>
-                <TouchableOpacity 
-                style={{flexDirection:'row',}}
-                onPress={() => {setVisible2019(true);}}>
-                  
-                  <Image source={require('../src/images/tf.jpg')}
-                      style={styles.logo}/>
-                  <View>
-                    <Text style={{fontSize:16, fontWeight:'bold'}}>Acheteur Fruits et Légumes</Text>
-                    <Text style={{fontSize:12, marginLeft:10}}>TANG FRERES</Text>
-                    <Text style={{fontSize:12, marginLeft:10, fontStyle:'italic'}}>Rungis 94150</Text>
-                  </View>
-                      
-                </TouchableOpacity>
-              </View>
-            </View>
 
-            <View style={{flexDirection:'row'}}>
-              <View style={styles.viewPoste}>
-                <Text style={{fontSize:10}}>Sept 2018</Text>
-                <Text style={{fontSize:10}}>-</Text>
-                <Text style={{fontSize:10}}>Sept 2016</Text>
-              </View>
-              <View style={styles.cardPoste}>
-                <TouchableOpacity style={{flexDirection:'row',}}
-                onPress={() => {setVisible2018(true);}}>
-                  
-                  <Image source={require('../src/images/tf.jpg')}
-                      style={styles.logo}/>
-                  <View>
-                    <Text style={{fontSize:16, fontWeight:'bold'}}>Directeur Adjoint</Text>
-                    <Text style={{fontSize:12, marginLeft:10}}>TANG FRERES</Text>
-                    <Text style={{fontSize:12, marginLeft:10, fontStyle:'italic'}}>Vitry Sur Seine 94400</Text>
-                  </View>
-                      
-                </TouchableOpacity>
-              </View>
-            </View>
+<View style={{flexDirection:'row'}}>
+  <View style={{flex:1, backgroundColor:'white'}}>
+    <ImageBackground source={require('../src/images/background.jpg')} style={styles.imageBackTime} >
+    
 
-            <View style={{flexDirection:'row'}}>
-              <View style={styles.viewPoste}>
-                <Text style={{fontSize:10}}>Sept 2016</Text>
-                <Text style={{fontSize:10}}>-</Text>
-                <Text style={{fontSize:10}}>Sept 2014</Text>
-              </View>
-              <View style={styles.cardPoste}>
-                <TouchableOpacity style={{flexDirection:'row',}}
-                  onPress={() => {setVisible2016(true);}}
-                >
-                  
-                  <Image source={require('../src/images/tf.jpg')}
-                      style={styles.logo}/>
-                  <View>
-                    <Text style={{fontSize:16, fontWeight:'bold'}}>Directeur Adjoint</Text>
-                    <Text style={{fontSize:12, marginLeft:10}}>TANG FRERES</Text>
-                    <Text style={{fontSize:12, marginLeft:10, fontStyle:'italic'}}>Paris 75013</Text>
-                  </View>
-                      
-                </TouchableOpacity>
-              </View>
-            </View>
+      <View style={{flexDirection:'row', alignItems:'center',}}>
+        <View>
+          <View style={{height:100, justifyContent:'center', alignItems:'center', marginLeft:15,}}>
+            <Text style={{fontWeight:'bold',}}>Sept 2019</Text>
+            <Text style={{fontWeight:'bold',}}>-</Text>
+            <Text style={{fontWeight:'bold',}}>Sept 2018</Text>
+          </View>
+        </View>
+        <View style={{marginLeft:'auto', marginRight:2}}>
+          <Icon name="caret-right" size={20} color="black"/>
+        </View>
+      </View>
 
-            <View style={{flexDirection:'row'}}>
-              <View style={styles.viewPoste}>
-                <Text style={{fontSize:10}}>Sept 2014</Text>
-                <Text style={{fontSize:10}}>-</Text>
-                <Text style={{fontSize:10}}>Sept 2011</Text>
-              </View>
-              <View style={styles.cardPoste}>
-                <TouchableOpacity style={{flexDirection:'row',}}
-                onPress={() => {setVisible2014(true);}}>
-                  
-                  <Image source={require('../src/images/casino.png')}
-                      style={styles.logo}/>
-                  <View>
-                    <Text style={{fontSize:16, fontWeight:'bold'}}>Manager Magasin</Text>
-                    <Text style={{fontSize:12, marginLeft:10}}>CASINO SUPERMARCHE</Text>
-                    <Text style={{fontSize:12, marginLeft:10, fontStyle:'italic'}}>Villejuif 94800</Text>
-                  </View>
-                      
-                </TouchableOpacity>
-              </View>
-            </View>
+      <View style={{flexDirection:'row', alignItems:'center', marginTop:5}}>
+        <View>
+          <View style={{height:100, justifyContent:'center', alignItems:'center', marginLeft:15}}>
+            <Text style={{fontWeight:'bold',}}>Sept 2018</Text>
+            <Text style={{fontWeight:'bold',}}>-</Text>
+            <Text style={{fontWeight:'bold',}}>Sept 2016</Text>
+          </View>
+        </View>
+        <View style={{marginLeft:'auto', marginRight:2}}>
+          <Icon name="caret-right" size={20} color="black"/>
+        </View>
+      </View>
 
-            <View style={{flexDirection:'row'}}>
-              <View style={styles.viewPoste}>
-                <Text style={{fontSize:10}}>Sept 2011</Text>
-                <Text style={{fontSize:10}}>-</Text>
-                <Text style={{fontSize:10}}>Sept 2010</Text>
-              </View>
-              <View style={styles.cardPoste}>
-                <TouchableOpacity style={{flexDirection:'row',}}
-                onPress={() => {setVisible2011(true);}}>
-                  
-                  <Image source={require('../src/images/tf.jpg')}
-                      style={styles.logo}/>
-                  <View>
-                    <Text style={{fontSize:16, fontWeight:'bold'}}>Chef de Rayon</Text>
-                    <Text style={{fontSize:12, marginLeft:10}}>TANG FRERES</Text>
-                    <Text style={{fontSize:12, marginLeft:10, fontStyle:'italic'}}>Pantin 93500</Text>
-                  </View>
-                      
-                </TouchableOpacity>
-              </View>
-            </View>
+      <View style={{flexDirection:'row', alignItems:'center', marginTop:5}}>
+        <View>
+          <View style={{height:100, justifyContent:'center', alignItems:'center', marginLeft:15}}>
+            <Text style={{fontWeight:'bold',}}>Sept 2016</Text>
+            <Text style={{fontWeight:'bold',}}>-</Text>
+            <Text style={{fontWeight:'bold',}}>Sept 2014</Text>
+          </View>
+        </View>
+        <View style={{marginLeft:'auto', marginRight:2}}>
+          <Icon name="caret-right" size={20} color="black"/>
+        </View>
+      </View>
 
-            <View style={{flexDirection:'row'}}>
-              <View style={styles.viewPoste}>
-                <Text style={{fontSize:10}}>Sept 2010</Text>
-                <Text style={{fontSize:10}}>-</Text>
-                <Text style={{fontSize:10}}>Sept 2009</Text>
+      <View style={{flexDirection:'row', alignItems:'center', marginTop:5}}>
+        <View>
+          <View style={{height:100, justifyContent:'center', alignItems:'center', marginLeft:15}}>
+            <Text style={{fontWeight:'bold',}}>Sept 2014</Text>
+            <Text style={{fontWeight:'bold',}}>-</Text>
+            <Text style={{fontWeight:'bold',}}>Sept 2011</Text>
+          </View>
+        </View>
+        <View style={{marginLeft:'auto', marginRight:2}}>
+          <Icon name="caret-right" size={20} color="black"/>
+        </View>
+      </View>
+
+      <View style={{flexDirection:'row', alignItems:'center', marginTop:5}}>
+        <View>
+          <View style={{height:100, justifyContent:'center', alignItems:'center', marginLeft:15}}>
+            <Text style={{fontWeight:'bold',}}>Sept 2011</Text>
+            <Text style={{fontWeight:'bold',}}>-</Text>
+            <Text style={{fontWeight:'bold',}}>Sept 2010</Text>
+          </View>
+        </View>
+        <View style={{marginLeft:'auto', marginRight:2}}>
+          <Icon name="caret-right" size={20} color="black"/>
+        </View>
+      </View>
+
+      <View style={{flexDirection:'row', alignItems:'center', marginTop:5}}>
+        <View>
+          <View style={{height:100, justifyContent:'center', alignItems:'center', marginLeft:15}}>
+            <Text style={{fontWeight:'bold',}}>Sept 2010</Text>
+            <Text style={{fontWeight:'bold',}}>-</Text>
+            <Text style={{fontWeight:'bold',}}>Sept 2009</Text>
+          </View>
+        </View>
+        <View style={{marginLeft:'auto', marginRight:2}}>
+          <Icon name="caret-right" size={20} color="black"/>
+        </View>
+      </View>
+
+    </ImageBackground>
+    
+  </View>
+  <View style={{flex:3}}>
+    
+      <View style={styles.cardExp}>
+        
+        <TouchableOpacity 
+        
+          style={{flexDirection:'row',}}
+          onPress={() => {setVisible2019(true);}}>
+            <Image source={require('../src/images/tf.jpg')} style={styles.logo}/>
+            <View>
+              <Text style={{fontSize:16, fontWeight:'bold'}}>Acheteur Fruits et Légumes</Text>
+              <Text style={{fontSize:12, }}>TANG FRERES</Text>
+              <View style={{flexDirection:'row'}}>
+                <Icon name="map-marker" size={12} color="red" style={{marginRight:5,}}/>
+                <Text style={{fontSize:12, fontStyle:'italic'}}>Rungis 94150</Text>
               </View>
-              <View style={styles.cardPoste}>
-                <TouchableOpacity style={{flexDirection:'row',}}>
-                  
-                  <Image source={require('../src/images/tf.jpg')}
-                      style={styles.logo}/>
-                  <View>
-                    <Text style={{fontSize:16, fontWeight:'bold'}}>Employé Polyvalent</Text>
-                    <Text style={{fontSize:12, marginLeft:10}}>TANG FRERES</Text>
-                    <Text style={{fontSize:12, marginLeft:10, fontStyle:'italic'}}>Vitry Sur Seine 94400</Text>
-                  </View>
-                      
-                </TouchableOpacity>
-              </View>
+              
             </View>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.cardExp}>
+        <TouchableOpacity 
+          style={{flexDirection:'row',}}
+          onPress={() => {setVisible2018(true);}}>
+            <Image source={require('../src/images/tf.jpg')} style={styles.logo}/>
+            <View>
+              <Text style={{fontSize:16, fontWeight:'bold'}}>Directeur Adjoint</Text>
+              <Text style={{fontSize:12, }}>TANG FRERES</Text>
+              <View style={{flexDirection:'row'}}>
+                <Icon name="map-marker" size={12} color="red" style={{marginRight:5,}}/>
+                <Text style={{fontSize:12, fontStyle:'italic'}}>Vitry Sur Seine 94400</Text>
+              </View>
+              
+            </View>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.cardExp}>
+        <TouchableOpacity 
+          style={{flexDirection:'row',}}
+          onPress={() => {setVisible2016(true);}}>
+            <Image source={require('../src/images/tf.jpg')} style={styles.logo}/>
+            <View>
+              <Text style={{fontSize:16, fontWeight:'bold'}}>Directeur Adjoint</Text>
+              <Text style={{fontSize:12,}}>TANG FRERES</Text>
+              <View style={{flexDirection:'row'}}>
+                <Icon name="map-marker" size={12} color="red" style={{marginRight:5,}}/>
+                <Text style={{fontSize:12,  fontStyle:'italic'}}>Paris 75013</Text>
+              </View>
+              
+            </View>      
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.cardExp}>
+        <TouchableOpacity 
+          style={{flexDirection:'row',}}
+          onPress={() => {setVisible2014(true);}}>
+            <Image source={require('../src/images/casino.png')} style={styles.logo}/>
+            <View>
+              <Text style={{fontSize:16, fontWeight:'bold'}}>Manager Magasin</Text>
+              <Text style={{fontSize:12, }}>CASINO SUPERMARCHE</Text>
+              <View style={{flexDirection:'row'}}>
+                <Icon name="map-marker" size={12} color="red" style={{marginRight:5,}}/>
+                <Text style={{fontSize:12, fontStyle:'italic'}}>Villejuif 94800</Text>
+              </View>
+              
+            </View>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.cardExp}>
+        <TouchableOpacity 
+          style={{flexDirection:'row',}}
+          onPress={() => {setVisible2011(true);}}>
+            <Image source={require('../src/images/tf.jpg')} style={styles.logo}/>
+            <View>
+              <Text style={{fontSize:16, fontWeight:'bold'}}>Chef de Rayon</Text>
+              <Text style={{fontSize:12, }}>TANG FRERES</Text>
+              <View style={{flexDirection:'row'}}>
+                <Icon name="map-marker" size={12} color="red" style={{marginRight:5,}}/>
+                <Text style={{fontSize:12, fontStyle:'italic'}}>Pantin 93500</Text>
+              </View>
+              
+            </View>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.cardExp}>
+        <TouchableOpacity 
+          style={{flexDirection:'row',}}>
+                  
+            <Image source={require('../src/images/tf.jpg')} style={styles.logo}/>
+            <View>
+              <Text style={{fontSize:16, fontWeight:'bold'}}>Employé Polyvalent</Text>
+              <Text style={{fontSize:12, }}>TANG FRERES</Text>
+              <View style={{flexDirection:'row'}}>
+                <Icon name="map-marker" size={12} color="red" style={{marginRight:5,}}/>
+                <Text style={{fontSize:12,  fontStyle:'italic'}}>Vitry Sur Seine 94400</Text>
+              </View>
+              
+            </View>
+        </TouchableOpacity>
+      </View>
+    
+   
+  </View>
+  
+  
+</View>
+
+
+
 
 
           </ScrollView>
@@ -745,8 +814,8 @@ function ExperiencesScreen({navigation}) {
       width:60,
       height:60,
       borderRadius:60,
-      marginRight:10,
-      marginLeft:10,
+      marginRight:5,
+      marginLeft:5,
     },
     next:{
       width:30,
@@ -771,6 +840,25 @@ function ExperiencesScreen({navigation}) {
       borderRadius:5 , 
       marginRight:10, 
       marginTop:5,
+    },
+
+    imageBackTime: {
+      flex: 1,
+      resizeMode: "cover",
+      justifyContent: "center"
+    },
+
+    cardExp : {
+      backgroundColor:'white',
+      height:100,   
+      justifyContent:'center',
+      borderBottomWidth:3,
+      borderRightWidth:3,
+      borderColor:'#e6e3df', 
+      borderRadius:5 , 
+      marginRight:10, 
+      marginTop:5,
+      marginLeft:10,
     }
     
   

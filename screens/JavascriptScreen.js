@@ -38,21 +38,21 @@ function JavascriptScreen({navigation}) {
             
             <View style={{flex:1,  marginTop:20, } }>
               
-              <View style={{backgroundColor:'white', width:320, height:250, alignItems:'center', borderTopRightRadius:20, borderTopLeftRadius:20, borderRightWidth:3, borderColor:'#e6e3df'}}>
+              <View style={{backgroundColor:'white', width:320, height:250, alignItems:'center', borderTopRightRadius:10, borderTopLeftRadius:10, borderRightWidth:3, borderColor:'#e6e3df'}}>
                 <SliderBox 
                   images={stateBikeshop} 
                   dotColor={'#ec9b3b'}
                   inactiveDotColor={'#e6e3df'}
-                  ImageComponentStyle={{borderRadius: 15, width:310, height:220, marginBottom:30, marginTop:5,  }}
+                  ImageComponentStyle={{borderRadius: 5, width:310, height:220, marginBottom:30, marginTop:5,  }}
                 />
               </View>
-              <View style={{backgroundColor:'white', width:320, borderBottomRightRadius:20, borderBottomLeftRadius:20, borderRightWidth:3, borderBottomWidth:3, borderColor:'#e6e3df'}}>
+              <View style={{backgroundColor:'white', width:320, borderBottomRightRadius:10, borderBottomLeftRadius:10, borderRightWidth:3, borderBottomWidth:3, borderColor:'#e6e3df'}}>
                 <View>
                   <Text style={{fontSize:20, fontWeight:'bold', margin:10}}>Bikeshop</Text>
                 </View>
                 <View>
                   <Text style={{marginLeft:10, marginRight:10}}>Site Web marchand</Text>
-                  <Text style={{fontSize:10, marginLeft:10, marginRight:10}}>(Projet en HTML CSS / Page Web responsive / BootStrap / Express / Node.js)</Text>
+                  <Text style={{fontSize:10, marginLeft:10, marginRight:10}}>(Technologies utilisées : BootStrap / Express / Node.js)</Text>
                 </View>
                 
                 <View style={{flexDirection:'row', margin:10, alignItems:'center'}}>
@@ -69,22 +69,22 @@ function JavascriptScreen({navigation}) {
 
             <View style={{flex:1,  marginTop:20, } }>
               
-              <View style={{backgroundColor:'white', width:320, height:250, alignItems:'center', borderTopRightRadius:20, borderTopLeftRadius:20, borderRightWidth:3, borderColor:'#e6e3df'}}>
+              <View style={{backgroundColor:'white', width:320, height:250, alignItems:'center', borderTopRightRadius:10, borderTopLeftRadius:10, borderRightWidth:3, borderColor:'#e6e3df'}}>
                 <SliderBox 
                   images={stateWeatherapp} 
                   dotColor={'#ec9b3b'}
                   inactiveDotColor={'#e6e3df'}
-                  ImageComponentStyle={{borderRadius: 15, width:310, height:220, marginBottom:30, marginTop:5,  }}
+                  ImageComponentStyle={{borderRadius: 5, width:310, height:220, marginBottom:30, marginTop:5,  }}
                 />
               </View>
-              <View style={{backgroundColor:'white', width:320, borderBottomRightRadius:20, borderBottomLeftRadius:20, borderRightWidth:3, borderBottomWidth:3, borderColor:'#e6e3df'}}>
+              <View style={{backgroundColor:'white', width:320, borderBottomRightRadius:10, borderBottomLeftRadius:10, borderRightWidth:3, borderBottomWidth:3, borderColor:'#e6e3df'}}>
                 <View>
                   <Text style={{fontSize:20, fontWeight:'bold', margin:10}}>Weather App</Text>
                 </View>
                 <View>
                   <Text style={{marginLeft:10, marginRight:10}}>Site Web utilisant une API</Text>
-                  <Text style={{marginLeft:10, marginRight:10}}>Permet d'afficher la météo selon ce que l'utilisateur souhaite connaître</Text>
-                  <Text style={{fontSize:10, marginLeft:10, marginRight:10}}>(Projet en HTML CSS / Page Web responsive / BootStrap / Express / Node.js)</Text>
+                  <Text style={{marginLeft:10, marginRight:10}}>Permet d'afficher la météo en live de la ville que l'utilisateur aura choisi</Text>
+                  <Text style={{fontSize:10, marginLeft:10, marginRight:10}}>(Technologies utilisées : BootStrap / Express / Node.js)</Text>
                 </View>
                 
                 <View style={{flexDirection:'row', margin:10, alignItems:'center'}}>

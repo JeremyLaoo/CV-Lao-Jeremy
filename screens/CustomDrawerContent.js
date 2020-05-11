@@ -11,7 +11,7 @@ function CustomDrawerContent(props){
           source={require('../src/images/background.jpg')}
           style={{width:undefined, height:200,}}>
           <View style={{height:100, justifyContent:'center', marginLeft: 20, marginTop:10}}>
-                <Image source={require('../src/images/profil.jpg')}
+                <Image source={require('../src/images/profil-color.png')}
                 style={{height:80, width: 80, borderRadius:60, marginTop: 50}}/>
           </View>
           <View style={{justifyContent:'center', marginLeft: 20, marginTop: 20}}>
@@ -44,7 +44,7 @@ function CustomDrawerContent(props){
                         <View style={{flex:1, alignItems:'center'}}>
                             <Icon name="user" size={18} color="black"/>
                         </View>
-                        <View style={{flex:5}}>
+                        <View style={{flex:10, marginLeft:5}}>
                             <Text style={styles.text}>A propos de moi </Text>
                         </View>
                 </TouchableOpacity>
@@ -54,10 +54,10 @@ function CustomDrawerContent(props){
                     style={styles.title}
                     onPress={() => props.navigation.navigate('Documents')}
                     >
-                        <View style={{flex:1, alignItems:'center'}}>
+                        <View style={{flex:1, alignItems:'center', marginLeft:1}}>
                             <Icon name="folder-open" size={18} color="black"/>
                         </View>
-                        <View style={{flex:5}}>
+                        <View style={{flex:10 , marginLeft:5}}>
                             <Text style={styles.text}>Documents</Text>
                         </View>
                         
@@ -72,9 +72,9 @@ function CustomDrawerContent(props){
                     >
 
                         <View style={{flex:1,  alignItems:'center'}}>
-                            <Icon name="envelope" size={18} color="black"/>
+                            <Icon name="envelope" size={17} color="black"/>
                         </View>
-                        <View style={{flex:5}}>
+                        <View style={{flex:10, marginLeft:5}}>
                             <Text style={styles.text}>Contactez-moi</Text>
                         </View>
                         

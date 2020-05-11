@@ -7,7 +7,12 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import {Provider} from 'react-redux';
+import message from './reducers/message';
+import {createStore, combineReducers}  from 'redux';
+
+import Ionicons from 'react-native-vector-icons/FontAwesome5';
+
 
 import AboutMeScreen from './screens/AboutMeScreen'
 import ContactScreen from './screens/ContactsScreen'
@@ -20,9 +25,10 @@ import ProfilScreen from './screens/ProfilScreen'
 import ProjetsScreen from './screens/ProjetsScreen'
 import TechnologiesScreen from './screens/TechnologiesScreen'
 import WelcomeScreen from './screens/WelcomeScreen'
+import MapScreen from './screens/MapScreen';
 
 
-
+const store = createStore (combineReducers({message}));
 
 function HomeScreenDetail({navigation}) {
   return (
@@ -112,15 +118,15 @@ function TabNavigator(){
             let iconName;
 
             if (route.name === 'Profil') {
-              iconName = 'ios-person';
+              iconName = 'user';
             } else if (route.name === 'Projets') {
-              iconName = 'logo-github';
+              iconName = 'github';
             } else if (route.name === 'Formations') {
-              iconName = 'ios-school';
+              iconName = 'graduation-cap';
             } else if (route.name === 'Experiences') {
-              iconName = 'ios-paper';
+              iconName = 'file-signature';
             } else if (route.name === 'Technologies') {
-              iconName = 'logo-css3';
+              iconName = 'react';
             }
 
             // You can return any component that you like here!
@@ -161,8 +167,6 @@ function DrawerNavigator(){
         <Drawer.Screen name="AboutMe" component={AboutMeScreen} />
         <Drawer.Screen name="Documents" component={DocumentScreen} />
         <Drawer.Screen name="Contacts" component={ContactScreen} />
-        
-        
     </Drawer.Navigator>
   )
   
@@ -171,14 +175,20 @@ function DrawerNavigator(){
 const StackApp = createStackNavigator();
 function App() {
   return (
-    <NavigationContainer>
-      <StackApp.Navigator initialRouteName="Welcome">
-        <StackApp.Screen name="Welcome" component={WelcomeScreen} options={navOptionHandler}/>
-        <StackApp.Screen name="HomeApp" component={DrawerNavigator} options={navOptionHandler}/>
-    </StackApp.Navigator>
-    </NavigationContainer>
+    <Provider store = {store}>
+      <NavigationContainer>
+        <StackApp.Navigator initialRouteName="Welcome">
+          <StackApp.Screen name="Welcome" component={WelcomeScreen} options={navOptionHandler}/>
+          <StackApp.Screen name="HomeApp" component={DrawerNavigator} options={navOptionHandler}/>
+          <StackApp.Screen name="MapScreen" component={MapScreen} options={navOptionHandler}/>
+        </StackApp.Navigator>
+      </NavigationContainer>
+    </Provider>
+    
   );
 }
+
+
 
 
 

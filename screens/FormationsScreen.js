@@ -19,7 +19,7 @@ function FormationsScreen({navigation}) {
   
     return (
       <SafeAreaView style={{ flex: 1 }}>
-        <CustomHeader title="Formation" isHome={true} navigation={navigation}/>
+        <CustomHeader title="Formations" isHome={true} navigation={navigation}/>
 
         <Overlay isVisible={visibleDev} width="auto" height="auto" onBackdropPress={toggleOverlayDev} >
           <View style={{width:300}}>
@@ -28,18 +28,35 @@ function FormationsScreen({navigation}) {
             </View>
             <View style={{flexDirection:'column', marginTop:10, marginLeft:5,}}>
                 <View style={{flexDirection:'row'}}>
-                  <Icon name="map-marker" size={12} color="red" style={{marginLeft:5, marginRight:10, marginBottom:5}}/>
-                  <Text style={{fontSize:12}}>Lieu : Paris (75010)</Text>
+                  <View style={{flex:1, alignItems:'center'}}>
+                    <Icon name="map-marker" size={12} color="red" style={{marginLeft:5, marginRight:10, marginBottom:5}}/>
+                  </View>
+                  <View style={{flex:10}}>
+                    <Text style={{fontSize:12}}>Lieu : Paris (75010)</Text>
+                  </View>
+                 
                 </View>
 
                 <View style={{flexDirection:'row'}}>
-                  <Icon name="file-text-o" size={12} color="red" style={{marginLeft:5, marginRight:10, marginBottom:5}}/>
-                  <Text style={{fontSize:12}}>Durée de formation : 400h sur 3 mois </Text>
+                  <View style={{flex:1 , alignItems:'center'}}>
+                    <Icon name="file-text-o" size={12} color="red" style={{marginLeft:5, marginRight:10, marginBottom:5}}/>
+                  </View>
+                  <View style={{flex:10}}>
+                    <Text style={{fontSize:12}}>Durée de formation : 400h sur 3 mois </Text>
+                  </View>
+                  
+                  
                 </View>
 
                 <View style={{flexDirection:'row'}}>
-                  <Icon name="calendar-check-o" size={12} color="red" style={{marginLeft:5, marginRight:10, marginBottom:5}}/>
-                  <Text style={{fontSize:12}}>Date : 6 Janvier 2020 au 13 Mars 2020</Text>
+                  <View style={{flex:1, alignItems:'center'}}>
+                    <Icon name="calendar-check-o" size={12} color="red" style={{marginLeft:5, marginRight:10, marginBottom:5}}/>
+                  </View>
+                  <View style={{flex:10}}>
+                    <Text style={{fontSize:12}}>Date : 6 Janvier 2020 au 13 Mars 2020</Text>
+                  </View>
+                  
+                  
                 </View>
                 
             </View>
@@ -49,7 +66,7 @@ function FormationsScreen({navigation}) {
                 <Text style={{fontSize:14}}>Programme de la formation :</Text>
               </View>
               <View>
-                <Text style={{padding:10, textAlign:'center', fontSize:12}}>Développeur web et mobile Fullstack JavaScript</Text>
+                <Text style={{paddingTop:10, fontSize:14}}>Développeur web et mobile Fullstack JavaScript</Text>
               </View>
               
             </View>

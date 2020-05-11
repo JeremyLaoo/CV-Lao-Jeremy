@@ -30,20 +30,20 @@ function ReactNativeScreen({navigation}) {
             
             <View style={{flex:1,  marginTop:20, } }>
               
-              <View style={{backgroundColor:'white', width:300, height:250, alignItems:'center', borderTopRightRadius:20, borderTopLeftRadius:20, borderRightWidth:3, borderColor:'#e6e3df'}}>
+              <View style={{backgroundColor:'white', width:300, height:250, alignItems:'center', borderTopRightRadius:10, borderTopLeftRadius:10, borderRightWidth:3, borderColor:'#e6e3df'}}>
                 <SliderBox 
                   images={stateOrdr} 
                   dotColor={'#ec9b3b'}
                   inactiveDotColor={'#e6e3df'}
-                  ImageComponentStyle={{borderRadius: 15, width:100, height:200, marginBottom:30, marginTop:10,  }}
+                  ImageComponentStyle={{borderRadius: 5, width:100, height:200, marginBottom:30, marginTop:10,  }}
                 />
               </View>
-              <View style={{backgroundColor:'white', width:300, borderBottomRightRadius:20, borderBottomLeftRadius:20, borderRightWidth:3, borderBottomWidth:3, borderColor:'#e6e3df'}}>
+              <View style={{backgroundColor:'white', width:300, borderBottomRightRadius:10, borderBottomLeftRadius:10, borderRightWidth:3, borderBottomWidth:3, borderColor:'#e6e3df'}}>
                 <View>
                   <Text style={{fontSize:20, fontWeight:'bold', margin:10}}>OrdR</Text>
                 </View>
                 <View>
-                  <Text style={{marginLeft:10, marginRight:10}}>Application Mobile permettant de commander à partir de sa table via un QR Code</Text>
+                  <Text style={{marginLeft:10, marginRight:10}}>Application Mobile permettant de commander à partir de son portable via un QR Code sans bouger de sa place.</Text>
                 </View>
                 
                 <View style={{flexDirection:'row', margin:10, alignItems:'center'}}>

@@ -1,4 +1,4 @@
 # CV-Lao-Jeremy
 CV sous forme d'application mobile
 
-![](CVappli.gif)
+![](ApplicationMobile.gif)

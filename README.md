@@ -3,4 +3,4 @@ CV sous forme d'application mobile
 
 <img align="center"
 ![](ApplicationMobile.gif)
-/>
+>

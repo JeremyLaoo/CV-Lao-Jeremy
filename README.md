@@ -1,5 +1,5 @@
 # CV-Lao-Jeremy
-CV sous forme d'application mobile
+<p align="center"> CV sous forme d'application mobile </p>
 
 
 ![](ApplicationMobile.gif)
